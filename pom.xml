@@ -12,7 +12,7 @@
     <artifactId>cloud_provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>provider</name>
-    <description>Demo provider spring cloud </description>
+    <description>Demo provider spring cloud</description>
 
     <properties>
         <spring-boot.version>2.6.2</spring-boot.version>
@@ -60,32 +60,17 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- 本地基础包 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.ztax</groupId>
+            <artifactId>cloud-common</artifactId>
+            <version>0.0.3</version>
         </dependency>
-
-        <!-- nacos客户端依赖包 -->
+        <!-- lombok -->
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>2021.1</version>
-        </dependency>
-
-        <!-- nacos 配置中心 -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
